@@ -1,5 +1,5 @@
 environment:
-  HOME: "c:\\projects\\tm2"
+  HOME: "c:\\projects\\mapbox-studio"
   AWS_ACCESS_KEY_ID:
     secure: "yr0cfv7H8uVu2iyIn93+brMT6oEhvm9FpkJPvwGZMlA="
   AWS_SECRET_ACCESS_KEY:
@@ -15,6 +15,7 @@ environment:
 shallow_clone: true
 
 install:
+  - cd
   # find and remove default node.exe to avoid conflicts
   - node -e "console.log(process.execPath)" > node_path.txt
   - SET /p NODE_EXE_PATH=<node_path.txt
